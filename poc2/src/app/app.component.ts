@@ -18,13 +18,9 @@ export class AppComponent implements OnInit {
   getReports() {
     const config = {
       type: 'report',
-      id: 'put-report-id-here',
+      uniqueId: 'put-report-id-here',
       embedUrl: 'https://app.powerbi.com/reportEmbed?reportId=put-report-id-here&groupId=put-group-id-here',
-      accessToken: 'put-access-token-here',
-      settings: {
-        filterPaneEnabled: true,
-        navContentPaneEnabled: true
-      }
+      accessToken: 'put-access-token-here'
     };
 
     // Grab the reference to the div HTML element that will host the report.
